@@ -1,0 +1,34 @@
+// Inter (400)
+.inter{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+// Ubuntu Condensed (400)
+.ubuntu-condensed {
+    font-family: "Ubuntu Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+// Kanit (300)
+.kanit {
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-style: normal;
+}  
+// Sofia Sans (400)
+.sofia-sans {
+    font-family: "Sofia Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+// Roboto Condensed (700)
+.roboto-condensed {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Kanit:wght@300&family=Roboto+Condensed:wght@700&family=Sofia+Sans&family=Ubuntu+Condensed&display=swap');
