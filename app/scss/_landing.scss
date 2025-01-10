@@ -17,7 +17,7 @@ main#index{
         justify-content: space-between;
         .slider-button{
             width: 65px;
-            height: 265px;
+            height: 240px;
             background-color: #000;
             display: flex;
             justify-content: center;
@@ -43,6 +43,8 @@ main#index{
             display: flex;
             justify-content: space-between;
             img{
+                width: 150px;
+                height: 240px;
                 cursor: pointer;
             }
         }
