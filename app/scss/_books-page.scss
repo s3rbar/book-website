@@ -1,0 +1,186 @@
+main#books-page{
+    .books-page_content{
+        width: 100%;
+        margin-top: 40px;
+        .content_main-info{
+            width: 100%;
+            height: 440px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            .books-cover{
+                width: 25%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .books-info{
+                width: 68%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &_name{
+                    font-weight: 700;
+                    font-size: 52px;
+                    margin: 0;                    
+                }
+                &_ratings{
+                    height: 96px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .stars{
+                        width: 220px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        .star{
+                            width: 40px;  
+                            aspect-ratio: 1;
+                            background: #FFFF00;
+                            clip-path: polygon(50% 0,
+                                calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+                                calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+                                calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+                                calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+                            ); 
+                            /* or more simple
+                            clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+                            */
+                        }
+                    }
+                }
+                &_author, &_genre, .rating-amount{
+                    font-size: 24px;
+                    margin: 0;
+                    span{
+                        font-size: 36px;
+                    }
+                }
+                &_link{
+                    button{
+                        width: inherit;
+                        background-color: #CED4FA;
+                        border-radius: 5px;
+                        padding: 5px 50px;
+                        font-size: 28px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .content_description{
+            width: 100%;
+            font-size: 24px;
+            span{
+                font-size: 36px;
+            }
+        }
+    }
+    .books-page_comment-section{
+        background-color: #CED4FA;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        margin: 40px 0;
+        border-radius: 50px;
+        .header{
+            font-size: 40px;
+            text-align: center;
+            margin: 0px;
+        }
+        .comment-amount{
+            opacity: 0.5;
+            margin: 12px 0 0 0;
+        }
+        hr{
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            border: none;
+            z-index: 9999;
+        }
+        .account-icon{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #9F76FF;
+            font-size: 30px;
+        }
+        .add-your-comment{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 8px 0;
+            .comment-info{
+                width: 92%;
+                &_text{
+                    margin-bottom: 10px;
+                    input{
+                        width: calc(100% - 20px);
+                        height: 60px;
+                        border: none;
+                        border-radius: 12px;
+                        padding-left: 20px;
+                        font-size: 24px;
+                        line-height: 24px;
+                        background-color: #87CBFF;
+                    }
+                    input::placeholder{
+                        font-family: "Ubuntu Condensed", serif;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                    button{
+                        position: absolute;
+                        left: calc(74.3% - 20px);
+                        margin-top: -54px;
+                        width: 200px;
+                        height: 44px;
+                        border-radius: 50px;
+                        background-color: #9F76FF;
+                        color: #fff;
+                        font-size: 32px;
+                        line-height: 32px;
+                        cursor: pointer;
+                    }
+                }
+                .login-link{
+                    color: #fff;
+                    font-size: 24px;
+                }
+            }
+        }
+        .random-comment{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .comment-info{
+                width: 93%;
+                &_details{
+                    height: 60px;
+                    h3{
+                        margin: 0;
+                    }
+                    .random-username{
+                        color: #9F76FF;
+                    }
+                    .comment-date{
+                        color: #fff;
+                    }
+                }
+                &_text{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

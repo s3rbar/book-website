@@ -9,10 +9,9 @@
 <body>
     <nav>
         <section class="nav-content">
-
             <section>
                 <input type="text" class="name-search ubuntu-condensed" placeholder="Type in the name ...">
-                <button class="search-button ubuntu-condensed">Search</button>
+                <button type="submit" class="search-button ubuntu-condensed">Search</button>
                 <div class="toggle ubuntu-condensed">
                     Choose Genre
                     <img src="../../arrow-imgs/Chevron down.png">
@@ -33,36 +32,44 @@
     </nav>
     <main id="books-page">
         <section class="books-page_content">
-            <section class="books-cover">
-                <img src="../../book-cover-imgs/book1Cover.png" alt="Coudn't download this image">
-            </section>
-            <section class="books-info">
-                <h1 class="books-info_name">Moby Dick</h1>
-                <section class="books-info_ratings">
-                    <div class="stars"></div>
-                    <h2 class="rating-amount">
-                        <span>Rated:</span> 5/5 by n people
-                    </h2>
+            <section class="content_main-info">
+                <section class="books-cover">
+                    <img src="../../book-cover-imgs/book1Cover.png" alt="Coudn't download this image">
                 </section>
-                <h2 class="books-info_author">
-                    <span>Author:</span> Herman Melville
-                </h2>
-                <h2 class="books-info_genre">
-                    <span>Genre:</span>
-                     Adventure fiction,
-                     Epic,
-                     Philosofical fiction,
-                     Allegory,
-                     Maritime literature
-                </h2>
-                <a href="#">
-                    <button>
-                        Read here
-                    </button>
-                </a>
+                <section class="books-info">
+                    <h1 class="books-info_name sofia-sans">“Moby Dick”</h1>
+                    <section class="books-info_ratings">
+                        <div class="stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <h2 class="rating-amount kanit">
+                            <span class="underline">Rated:</span> 5/5 by n people
+                        </h2>
+                    </section>
+                    <h2 class="books-info_author kanit">
+                        <span class="underline">Author:</span> Herman Melville
+                    </h2>
+                    <h2 class="books-info_genre kanit">
+                        <span class="underline">Genre:</span>
+                        Adventure fiction,
+                        Epic,
+                        Philosofical fiction,
+                        Allegory,
+                        Maritime literature
+                    </h2>
+                    <a class="books-info_link" href="#">
+                        <button class="ubuntu-condensed">
+                            Read here
+                        </button>
+                    </a>
+                </section>
             </section>
-            <article class="description">
-                <span>Description:</span> 
+            <article class="content_description ubuntu-condensed">
+                <span class="underline">Description:</span> 
                 This story is about a sailor named Ishmael 
                 who joins a whaling ship called the Pequod. 
                 The ship's captain, Ahab, is obsessed with hunting down Moby Dick, 
@@ -74,35 +81,35 @@
             </article>
         </section>
         <section class="books-page_comment-section">
-            <h2 class="comment-section_header">
+            <h2 class="header ubuntu-condensed">
                 What do you think?
             </h2>
-            <h2 class="comment-amount">
+            <h2 class="comment-amount ubuntu-condensed">
                 N comments
             </h2>
             <hr>
             <section class="add-your-comment">
-                <div class="account-icon">
+                <div class="account-icon your-account-icon ubuntu-condensed">
                     A
                 </div>
                 <section class="comment-info">
-                    <div class="commment-info_text">
+                    <div class="comment-info_text">
                         <input type="text" placeholder="Leave your comment ...">
-                        <button type="submit" class="comment-button">Comment</button>
+                        <button type="submit" class="comment-button ubuntu-condensed">Comment</button>
                     </div>
-                    <a href="#" class="login-link">TO LOG IN WITH</a>
+                    <a href="#" class="login-link ubuntu-condensed">TO LOG IN</a>
                 </section>
             </section>
             <section class="random-comment">
-                <div class="random-account-icon">
+                <div class="account-icon random-account-icon ubuntu-condensed">
                     R
                 </div>
                 <section class="comment-info">
                     <div class="comment-info_details">
-                        <h3 class="random-username">randomUser</h3>
-                        <h3 class="comment-date">N days ago</h3>
+                        <h3 class="random-username ubuntu-condensed">randomUser</h3>
+                        <h3 class="comment-date ubuntu-condensed">n days ago</h3>
                     </div>
-                    <div class="commment-info_text">
+                    <div class="comment-info_text ubuntu-condensed">
                         Just a random comment. Just a random comment
                     </div>
                 </section>
