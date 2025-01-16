@@ -1,0 +1,77 @@
+form{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 20px;
+    a{
+        font-family: "Kanit";
+        text-decoration: underline;
+    }
+    h1{
+        font-family: "Roboto Condensed";
+        font-size: 32px;
+        margin: 0 auto 20px auto;
+        text-align: center;
+    }
+    .login, .sign-up, .password-reset{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            opacity: 0.5;
+        }
+    }
+    .login{
+        margin-bottom: 10px;
+        span{
+            opacity: 0.5;
+        }
+    }
+    .sign-up{
+        margin: 0 0 10px 0;
+    }
+    .password-reset{
+        margin: 10px 0 0 0;
+    }
+    .form-info{
+        width: 100%;
+        label{
+            font-size: 20px;
+            font-family: "Kanit";
+            opacity: 0.75;
+        }
+        input{
+            width: 100%;
+            height: 30px;
+            font-size: 20px;
+            padding: 0;
+            margin: 4px 0;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+    }
+    .links{
+        width: fit-content;
+        margin-left: auto;
+        a{
+            margin-left: 10px;
+        }
+    }
+    input[type="submit"]{
+        width: 200px;
+        padding: 10px;
+        font-family: "Roboto Condensed";
+        border: none;
+        background-color: #000;
+        color: #fff;
+        font-size: 24px;
+        margin: 20px auto 0 auto;
+    }
+}
