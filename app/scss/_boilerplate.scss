@@ -3,6 +3,11 @@ body{
     padding: 0;
 }
 
+body.active{
+    height: 100%;
+    overflow: hidden !important;
+}
+
 // To remove focus outline from inputs
 *:focus{
     outline: none;

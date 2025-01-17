@@ -1,1 +1,1 @@
-{"version":3,"file":"app.js","names":[],"sources":[],"mappings":"","ignoreList":[]}
+{"version":3,"file":"app.js","names":["document","addEventListener","menuToggle","querySelector","navMenu","classList","toggle","body"],"sources":["app.js"],"mappings":"AAAAA,SAASC,iBAAiB,oBAAoB,WAC1C,IAAIC,EAAaF,SAASG,cAAc,mBACpCC,EAAUJ,SAASG,cAAc,aAErCD,EAAWD,iBAAiB,SAAS,WACjCC,EAAWG,UAAUC,OAAO,UAC5BN,SAASO,KAAKF,UAAUC,OAAO,UAC/BF,EAAQC,UAAUC,OAAO,SAC7B,GACJ","ignoreList":[]}

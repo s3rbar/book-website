@@ -9,6 +9,40 @@ nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .menu-toggle{
+            display: none;
+            width: 30px;
+            height: 25px;
+            // display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            z-index: 999999999999999;
+            div{
+                position: relative;
+                width: 30px;
+                height: 5px;
+                background-color: #000;
+                border-radius: 5px;
+                transition: 0.1s ease-in-out;
+            }
+        }
+        .menu-toggle.active{
+            .upper{
+                transform: rotate(45deg);
+                position: absolute;
+                margin-top: 10px;
+            }
+            .middle{
+                opacity: 0;
+            }
+            .lower{
+                transform: rotate(135deg);
+                position: absolute;
+                margin-top: 10px;
+            }
+        }
         section{
             width: 60%;
             display: flex;
@@ -41,6 +75,200 @@ nav{
             text-decoration: none;
             font-size: 30px;
             color: #000;
+        }
+    }
+}
+
+@media (max-width: 1441px) {
+    nav{
+        .nav-content{
+            section{
+                input{
+                    width: 200px;
+                }
+                input, input::placeholder, button{
+                    font-size: 18px;
+                }
+                .nav-toggle{
+                    padding: 0 8px;
+                    font-size: 18px;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1251px) {
+    nav{
+        .nav-content{
+            section{
+                input, input::placeholder, button{
+                    font-size: 16px;
+                }
+                .nav-toggle{
+                    padding: 0 6px;
+                    font-size: 16px;
+                    img{
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1151px) {
+    nav{
+        .nav-content{
+            section{
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1001px) {
+    nav{
+        .nav-content{
+            section{
+                input{
+                    width: 175px;
+                }
+                .nav-toggle{
+                    padding: 0 5px;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 901px) {
+    nav{
+        .nav-content{
+            section{
+                .search-button, input, input::placeholder{
+                    font-size: 14px;
+                }
+                .nav-toggle{
+                    font-size: 14px;
+                    padding: 0 4px;
+                    img{
+                        width: 17px;
+                        height: 17px;
+                    }
+                }
+            }
+            a{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 801px) {
+    nav{
+        .nav-content{
+            section{
+                width: 75%;
+                .nav-toggle, .search-button, input, input::placeholder{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav{
+        .nav-content{
+            width: 90%;
+            section{
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 701px) {
+    nav{
+        .nav-content{
+            section{
+                input{
+                    width: 150px;
+                }
+                .nav-toggle, .search-button, input, input::placeholder{
+                    font-size: 12px;
+                }
+                .nav-toggle{
+                    img{
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+            a{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+// Change of nav menu
+@media (max-width: 631px) {
+    nav{
+        .nav-content{
+            .menu-toggle{
+                display: flex;
+            }
+            section{
+                display: block;
+                width: 78%;
+                height: 100vh;
+                position: absolute;
+                padding: 10px 11% 0 11%;
+                top: 50px;
+                left: -100%;
+                background-color: #CED4FA;
+                z-index: 1000;
+                .search-button, .nav-toggle{
+                    margin: 10px 0 0 0;
+                }
+                input{
+                    width: 240px;
+                    height: 30px;
+                    border: none;
+                }
+                input, input::placeholder{
+                    font-size: 20px;
+                }
+                .search-button,
+                .nav-toggle{
+                    background-color: #000;
+                    color: #fff;
+                    height: 30px;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                .nav-toggle{
+                    width: fit-content;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    padding: 0px 11px;
+                }
+            }
+            section.active{
+                left: 0;
+            }
         }
     }
 }

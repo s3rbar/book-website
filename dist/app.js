@@ -1,1 +1,1 @@
-//# sourceMappingURL=app.js.map
+document.addEventListener("DOMContentLoaded",(function(){let e=document.querySelector("div.menu-toggle"),t=document.querySelector("#nav-menu");e.addEventListener("click",(function(){e.classList.toggle("active"),document.body.classList.toggle("active"),t.classList.toggle("active")}))}));//# sourceMappingURL=app.js.map
