@@ -39,6 +39,13 @@ form{
     }
     .password-reset{
         margin: 10px 0 0 0;
+        .keep-login{
+            cursor: pointer;
+            -webkit-user-select: none;       
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
     }
     .form-info{
         width: 100%;
@@ -73,5 +80,37 @@ form{
         color: #fff;
         font-size: 24px;
         margin: 20px auto 0 auto;
+    }
+}
+
+@media (max-width: 426px) {
+    form{
+        width: 240px;
+        padding: 15px;
+        h1{
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .login, .links, .sign-up{
+            span, a{
+                font-size: 14px;
+            }
+        }
+        .form-info{
+            label, input{
+                font-size: 16px;
+            }
+        }
+        .password-reset{
+            font-size: 12px;
+            .keep-login{
+                display: flex;
+                align-items: center;
+            }
+        }
+        input[type="submit"]{
+            width: 170px;
+            font-size: 20px;
+        }
     }
 }
