@@ -123,16 +123,22 @@ main#books-page{
             .comment-info{
                 width: 92%;
                 &_text{
+                    width: calc(100% - 20px);
+                    display: flex;
+                    background-color: #87CBFF;
                     margin-bottom: 10px;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 10px 0 0;
                     input{
-                        width: calc(100% - 20px);
+                        width: 75%;
                         height: 60px;
                         border: none;
                         border-radius: 12px;
                         padding-left: 20px;
                         font-size: 24px;
                         line-height: 24px;
-                        background-color: #87CBFF;
+                        background-color: rgba(0, 0, 0, $alpha: 0);
                     }
                     input::placeholder{
                         font-family: "Ubuntu Condensed", serif;
@@ -140,9 +146,6 @@ main#books-page{
                         font-style: normal;
                     }
                     button{
-                        position: absolute;
-                        left: calc(74.3% - 20px);
-                        margin-top: -54px;
                         width: 200px;
                         height: 44px;
                         border-radius: 50px;
