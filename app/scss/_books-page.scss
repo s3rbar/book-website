@@ -59,8 +59,8 @@ main#books-page{
                     }
                 }
                 &_link{
+                    width: fit-content;
                     button{
-                        width: fit-content;
                         background-color: #CED4FA;
                         border-radius: 5px;
                         padding: 5px 50px;
@@ -247,7 +247,6 @@ main#books-page{
                             font-size: 26px;
                         }
                     }
-
                 }
             }
             .content_description{
@@ -306,6 +305,119 @@ main#books-page{
                     }
                     &_text{
                         font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 851px) {
+    main#books-page{
+        .books-page_content{
+            .content_main-info{
+                .books-cover{
+                    width: 30%;
+                }
+                .books-info{
+                    width: 65%;
+                    &_name{
+                        font-size: 40px;
+                    }
+                    &_author, &_genre, .rating-amount{
+                        font-size: 16px;
+                        span{
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 631px) {
+    main#books-page{
+        .books-page_content{
+            .content_main-info{
+                height: fit-content;    
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 10px;
+                .books-cover{
+                    width: 280px;
+                    height: 380px;
+                }
+                .books-info{
+                    width: 100%;
+                    &_name{
+                        font-size: 40px;
+                    }
+                    &_author, &_genre, .rating-amount{
+                        font-size: 14px;
+                        span{
+                            font-size: 22px;
+                        }
+                    }
+                    &_link{
+                        margin: 5px 0 0 0;
+                    }
+                }
+            }
+            .content_description{
+                font-size: 14px;
+                span{
+                    font-size: 22px;
+                }
+            }
+        }
+        .books-page_comment-section{
+            margin: 10px auto;
+            .header{
+                font-size: 28px;
+            }
+            .comment-amount{
+                font-size: 18px;
+            }
+            .account-icon{
+                width: 25px;
+                height: 25px;
+                font-size: 18px;
+            }
+            .add-your-comment{
+                .comment-info{
+                    width: calc(100% - 35px);
+                    &_text{
+                        width: calc(100% - 5px);
+                        padding: 0 5px 0 0;
+                        margin-bottom: 5px;
+                        input{
+                            font-size: 12px;
+                            height: 40px;
+                            padding-left: 10px;
+                        }
+                        button{
+                            width: fit-content;
+                            height: 30px;
+                            font-size: 16px;
+                            padding: 0 8px;
+                        }
+                    }
+                    .login-link{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .random-comment{
+                .comment-info{
+                    width: calc(100% - 35px);
+                    &_details{
+                        height: 35px;
+                        font-size: 12px;
+                        line-height: 13px;
+                    }
+                    &_text{
+                        font-size: 15px;
                     }
                 }
             }
