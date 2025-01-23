@@ -47,10 +47,7 @@ main#books-page{
                                 calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
                                 calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
                                 calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
-                            ); 
-                            /* or more simple
-                            clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
-                            */
+                            );
                         }
                     }
                 }
@@ -63,7 +60,7 @@ main#books-page{
                 }
                 &_link{
                     button{
-                        width: inherit;
+                        width: fit-content;
                         background-color: #CED4FA;
                         border-radius: 5px;
                         padding: 5px 50px;
@@ -121,20 +118,20 @@ main#books-page{
             justify-content: space-between;
             margin: 8px 0;
             .comment-info{
-                width: 92%;
+                width: calc(100% - 90px);
                 &_text{
-                    width: calc(100% - 20px);
+                    width: calc(100% - 10px);
                     display: flex;
                     background-color: #87CBFF;
                     margin-bottom: 10px;
                     justify-content: space-between;
                     align-items: center;
+                    border-radius: 12px;
                     padding: 0 10px 0 0;
                     input{
                         width: 75%;
                         height: 60px;
                         border: none;
-                        border-radius: 12px;
                         padding-left: 20px;
                         font-size: 24px;
                         line-height: 24px;
@@ -167,7 +164,7 @@ main#books-page{
             flex-direction: row;
             justify-content: space-between;
             .comment-info{
-                width: 93%;
+                width: calc(100% - 75px);
                 &_details{
                     height: 60px;
                     h3{
@@ -182,6 +179,134 @@ main#books-page{
                 }
                 &_text{
                     font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1301px) {
+    main#books-page{
+        .books-page_content{
+            margin-top: 20px;
+            .content_main-info{
+                height: 350px;
+                margin-bottom: 20px;
+                .books-info{
+                    &_name{
+                        font-size: 48px;
+                    }
+                    &_ratings{
+                        height: 80px;
+                    }
+                    &_author, &_genre, .rating-amount{
+                        font-size: 20px;
+                        span{
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+            .content_description{
+                font-size: 20px;
+                span{
+                    font-size: 28px;
+                }
+            }
+        }
+        .books-page_comment-section{
+            margin: 20px 0;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    main#books-page{
+        .books-page_content{
+            .content_main-info{
+                height: 300px;
+                .books-cover{
+                    width: 27%;
+                }
+                .books-info{
+                    &_name{
+                        font-size: 44px;
+                    }
+                    &_ratings{
+                        height: 70px;
+                        .stars{
+                            width: 170px;
+                            .star{
+                                width: 30px;
+                            }
+                        }
+                    }
+                    &_author, &_genre, .rating-amount{
+                        font-size: 18px;
+                        span{
+                            font-size: 26px;
+                        }
+                    }
+
+                }
+            }
+            .content_description{
+                font-size: 18px;
+                span{
+                    font-size: 26px;
+                }
+            }
+        }
+        .books-page_comment-section{
+            padding: 20px;
+            .header{
+                font-size: 32px;
+            }
+            .comment-amount{
+                font-size: 22px;
+                margin-top: 0px;
+            }
+            .account-icon{
+                width: 40px;
+                height: 40px;
+            }
+            .add-your-comment{
+                .comment-info{
+                    width: calc(100% - 70px);
+                    &_text{
+                        input{
+                            height: 50px;
+                            font-size: 20px;
+                        }
+                        button{
+                            width: 150px;
+                            height: 40px;
+                            font-size: 26px;
+                        }
+                    }
+                    .login-link{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .random-comment{
+                .comment-info{
+                    width: calc(100% - 55px);
+                    &_details{
+                        height: 50px;
+                        h3{
+                            margin: 0;
+                        }
+                        .random-username{
+                            color: #9F76FF;
+                        }
+                        .comment-date{
+                            color: #fff;
+                        }
+                    }
+                    &_text{
+                        font-size: 20px;
+                    }
                 }
             }
         }
