@@ -16,7 +16,7 @@ main#index{
         justify-content: space-between;
         .slider-button{
             width: 65px;
-            height: 240px;
+            height: 270px;
             background-color: #000;
             display: flex;
             justify-content: center;
@@ -43,10 +43,14 @@ main#index{
             justify-content: space-between;
             margin-bottom: 10px;
             img{
-                width: 150px;
-                height: 240px;
+                width: 185px;
+                height: 270px;
                 cursor: pointer;
             }
+        }
+        .book-covers_hidden-space{
+            position: absolute;
+            left: -1800px;
         }
     }
 }
@@ -129,9 +133,6 @@ main#index{
                     width: 17%;
                     height: 150px;
                 }
-                img:nth-child(6){
-                    display: none;
-                }
             }
         }
     }
@@ -144,9 +145,6 @@ main#index{
                 width: 75%;
                 img{
                     width: 20%;
-                }
-                img:nth-child(5){
-                    display: none;
                 }
             }
         }
@@ -175,9 +173,6 @@ main#index{
                 width: 75%;
                 img{
                     width: 30%;
-                }
-                img:nth-child(4){
-                    display: none;
                 }
             }
         }
@@ -208,12 +203,6 @@ main#index{
                 img{
                     width: 70%;
                     height: 250px;
-                }
-                img:nth-child(2){
-                    display: none;
-                }
-                img:nth-child(3){
-                    display: none;
                 }
             }
         }
